@@ -1,3 +1,10 @@
+// colors
+
+$red: #f43427;
+$white:#f4fdfd;
+$yellow :#fcb11a;
+$dimwhite:#fff4bb;
+
 *{
     margin: 0;
     padding: 0;
@@ -6,13 +13,21 @@
 
 body{
     font-size: 1rem;
-    background-color: blue;
+    background-color: $white;
 }
 
 
-// colors
-
-$red: #f43427;
-$white:#f4fdfd;
-$yellow :#fcb11a;
-$dimwhite:#fff4bb;
+.btn-style{
+    width: 2.6rem;
+    height: 2.6rem;
+    margin-left: 0.5rem;
+    background-color: $white;
+    border-radius: 1px solid $red;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+        background-color: $red;
+        color: $white;
+        transition: all 0.3s ease-in-out;
+    }
+}

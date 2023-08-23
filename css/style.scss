@@ -2,3 +2,76 @@
 @import "slick-theme.css";
 @import "animate.css";
 @import "_utilities";
+
+.slider_section {
+  background-image: url(../images/banner-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  &::before {
+    content: "";
+    background-color: rgba($red, 0.85);
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    display: block;
+    position: absolute;
+  }
+  header {
+    position: relative;
+    z-index: 99;
+    .navbar-brand{
+        font-size: 3.5rem;
+        font-weight: bold;
+        color: #fff;
+        font-style: italic;
+    }
+    .nav-link{
+        font-size: 1.025rem;
+        color: #fff;        
+        font-weight: 500;
+        text-transform: uppercase;
+        border-bottom: 1px solid transparent;
+        &:hover{
+            color: $yellow;
+            border-bottom: 1px solid $yellow;
+        }
+    }
+    
+  }
+  .hero_container {
+    position: relative;
+    z-index: 11;
+    padding-top: 1rem;
+    .slick-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .text-content{
+    color: #fff;
+    text-transform: uppercase;
+    h1{
+    
+    font-weight: 800;
+    }
+    p{
+        text-transform: capitalize;
+    }
+    a{
+        background-color: transparent;
+        border: 2px solid white;
+        padding: 0.5rem 3rem;
+        font-size: 1.3rem;
+        border-radius: 100px;
+        color: white;
+        &:hover{
+            background-color: white;
+            color: $red;
+        }
+    }
+    }
+  }
+
+}
