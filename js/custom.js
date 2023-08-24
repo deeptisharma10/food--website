@@ -25,10 +25,26 @@ $(document).ready(function () {
     adaptiveHeight: true,
     cssEase: "linear",
   });
-
-  
  
 });
+
+$(document).ready(function () {
+  $("#slickMenuSlider").slick({
+    dots: true,
+    autoplay: false,
+    infinite: true,
+    autoplaySpeed: 5000,
+    arrows: true,
+    speed: 1000,
+    fade: false,
+    slidesToShow: 8,
+    slidesToScroll: 8,
+    adaptiveHeight: true,
+    cssEase: "linear",
+  });
+
+});
+
 
 wow = new WOW({
 	boxClass: "wow", // default
