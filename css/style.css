@@ -111,4 +111,16 @@ body {
 .slider_section .hero_container .text-content a:hover {
   background-color: white;
   color: #f43427;
+}
+
+.menu_item_section {
+  margin-top: 4rem;
+}
+.menu_item_section .menu_items-slider img {
+  width: 80px;
+  height: 80px;
+}
+
+.offers {
+  margin-top: 5rem;
 }/*# sourceMappingURL=style.css.map */
